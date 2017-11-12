@@ -1,6 +1,8 @@
 
 
 import javax.swing.*;
+import java.awt.*;
+
   
 @SuppressWarnings("serial")
 public class MainPanel extends JFrame {
@@ -43,9 +45,7 @@ public class MainPanel extends JFrame {
 
             public void run() {
                 MainPanel browser = new MainPanel();
-                browser.setVisible(true);
-                //browser.loadURL();
-               
+                browser.setVisible(true);               
            }     
        });
     }

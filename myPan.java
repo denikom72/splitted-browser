@@ -136,7 +136,7 @@ public class myPan {
                         SwingUtilities.invokeLater(new Runnable() {
                              
                             public void run() {
-                            	System.out.println("dddddddddddddd");                            }
+                            	System.out.println("listener added");                            }
                         });
                     }
                 });
@@ -161,9 +161,10 @@ public class myPan {
                              
                             public void run() {
                             	@SuppressWarnings("unused")
-								Boolean newState = true;
-								if (State.SUCCEEDED != null) {
-                            		//engine.executeScript("alert('just a test')");
+				Boolean newState = true;
+				if (State.SUCCEEDED != null) {
+                            		engine.executeScript("console.log('just a test')");
+					//engine.executeScript("alert('just a test')");
                             	}
                             	
                                 txtURL.setText(newValue);
